@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Ruang ZIS</title>
+  <title>Ruang ZIS | Login</title>
   <!-- loader-->
   <link href="{{asset('assets1/css/pace.min.css')}}" rel="stylesheet"/>
   <script src="{{asset('assets1/js/pace.min.js')}}"></script>
@@ -60,36 +60,10 @@
 				  </div>
 			   </div>
 			  </div>
-			<div class="form-row">
-			 <div class="form-group col-6">
-			   <div class="icheck-material-white">
-                <input type="checkbox" id="user-checkbox" checked="" />
-                <label for="user-checkbox">Remember me</label>
-			  </div>
-			 </div>
-			 <div class="form-group col-6 text-right">
-			  <a href="reset-password.html">Reset Password</a>
-			 </div>
-			</div>
 			 <button type="submit" class="btn btn-light btn-block">Sign In</button>
-			  <div class="text-center mt-3">Sign In With</div>
+			
 			  
-			 <div class="form-row mt-4">
-			  <div class="form-group mb-0 col-6">
-			   <button type="button" class="btn btn-light btn-block"><i class="fa fa-facebook-square"></i> Facebook</button>
-			 </div>
-			 <div class="form-group mb-0 col-6 text-right">
-			  <button type="button" class="btn btn-light btn-block"><i class="fa fa-twitter-square"></i> Twitter</button>
-			 </div>
-			</div>
-			 
-			 </form>
-		   </div>
-		  </div>
-		  <div class="card-footer text-center py-3">
-		    <p class="text-warning mb-0">Do not have an account? <a href="./register"> Sign Up here</a></p>
-		  </div>
-	     </div>
+	
     
      <!--Start Back To Top Button-->
     <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>

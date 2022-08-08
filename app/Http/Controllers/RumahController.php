@@ -45,9 +45,9 @@ class RumahController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => 'required|unique:rumahs',
-            'artikel' => 'required',
-            'tanggal' => 'required',
+            'judul' => 'unique:rumahs',
+            'artikel' => '',
+            'tanggal' => '',
         ]);
 
         $rumah1 = new rumah();

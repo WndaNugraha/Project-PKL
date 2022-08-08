@@ -52,9 +52,9 @@ class ZakatController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => 'required|unique:zakats',
-            'artikel' => 'required',
-            'tanggal' => 'required',
+            'judul' => '|unique:zakats',
+            'artikel' => '',
+            'tanggal' => '',
         ]);
 
         $zakat1 = new zakat();
@@ -103,9 +103,9 @@ class ZakatController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => 'required|:zakats',
-            'artikel' => 'required',
-            'tanggal' => 'required',
+            'judul' => '|:zakats',
+            'artikel' => '',
+            'tanggal' => '',
         ]);
 
         $zakat1 = zakat::findOrFail($id);

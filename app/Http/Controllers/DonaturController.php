@@ -28,50 +28,7 @@ class DonaturController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-        
-        return view('TampilanUser.donasi2');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-        $validated = $request->validate([
-            'nama' => 'required',
-            'email' => 'required',
-            'no' => 'required|unique:donaturs',
-            'jenis' => 'required',
-            'jumlah' => 'required',
-            'pembayaran' => 'required',
-        ]);
-
-        $donatur1 = new donatur();
-        $donatur1->nama = $request->nama;
-        $donatur1->email = $request->email;
-        $donatur1->no = $request->no;
-        $donatur1->jenis = $request->jenis;
-        $donatur1->jumlah = $request->jumlah;
-        $donatur1->pembayaran = $request->pembayaran;
-
-        $donatur1->save();
-        return redirect()->route('d')
-            ->with('success', 'Data berhasil dibuat!');
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function show($id)
     {
         //
@@ -124,7 +81,7 @@ class DonaturController extends Controller
         $donatur1->pembayaran = $request->pembayaran;
 
         $donatur1->save();
-        return redirect()->route('donatur.index')
+        return redirect()->route('#')
             ->with('success', 'Data berhasil dibuat!');
     
     }

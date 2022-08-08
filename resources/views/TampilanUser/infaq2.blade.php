@@ -34,46 +34,12 @@
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Pengertian</h6>
-                            <h2 class="mt-2">Pengertian Infaq</h2>
-                        </div>
-                        <p class="mb-4">Kata Infaq berasal dari kata anfaqo-yunfiqu, artinya membelanjakan atau membiayai, 
-                            arti infaq menjadi khusus ketika dikaitkan dengan upaya realisasi perintah-perintah Allah.
-                            Infaq tidak harus diberikan kepada mustahik tertentu, melainkan kepada siapapun misalnya orang tua, 
-                            kerabat, anak yatim, orang miskin, atau orang-orang yang sedang dalam perjalanan. Dengan demikian 
-                            pengertian infaq adalah pengeluaran suka rela yang di lakukan seseorang. </p>
-                        
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn " data-wow-delay="0.5s" src="aset/img/d.sedekah2.png" style="width: 450px; height:350px">
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
-
-                <div class="row g-5">
-                <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn " data-wow-delay="0.5s" src="aset/img/d.sedekah2.png" style="width: 450px; height:350px">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Tujuan</h6>
-                            <h2 class="mt-2">Tujuan Infaq</h2>
-                        </div>
-                        <p class="mb-4">Mendermakan atau memberi rezeki (karunia) atau 
-                            menafkahkan sesuatu kepada orang lain berdasarkan keikhlasan dan karena Allah Swt. Semata.</p>
-                        
-                    </div>
-                </div>
+             @foreach($infaq as $data)
+                <h4>{{$data->judul}}</h4>
+                <p>{{$data->artikel}}</p>
+             @endforeach
             </div>
         </div>
-        </div>
-        </div>
-        <!-- About End -->
 
 
         

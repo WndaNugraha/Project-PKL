@@ -44,9 +44,9 @@ class ShodakohController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => 'required|unique:shodakohs',
-            'artikel' => 'required',
-            'tanggal' => 'required',
+            'judul' => '|unique:shodakohs',
+            'artikel' => '',
+            'tanggal' => '',
         ]);
 
         $shodakoh1 = new shodakoh();
@@ -96,9 +96,9 @@ class ShodakohController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => 'required|:shodakohs',
-            'artikel' => 'required',
-            'tanggal' => 'required',
+            'judul' => '|:shodakohs',
+            'artikel' => '',
+            'tanggal' => '',
         ]);
 
         $shodakoh1 = shodakoh::findOrFail($id);

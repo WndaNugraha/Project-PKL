@@ -44,9 +44,9 @@ class InfaqController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => 'required|unique:infaqs',
-            'artikel' => 'required',
-            'tanggal' => 'required',
+            'judul' => 'unique:infaqs',
+            'artikel' => '',
+            'tanggal' => '',
         ]);
 
         $infaq1 = new infaq();
@@ -95,9 +95,9 @@ class InfaqController extends Controller
     {
         //
     $validated = $request->validate([
-            'judul' => 'required|unique:infaqs',
-            'artikel' => 'required',
-            'tanggal' => 'required',
+            'judul' => '|unique:infaqs',
+            'artikel' => '',
+            'tanggal' => '',
         ]);
 
         

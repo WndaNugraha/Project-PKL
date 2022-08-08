@@ -9,40 +9,26 @@
                         Data Artikel Donatur
                     </div>
                     <div class="card-body">
-                    <div class="mb-3">
-                            <label class="form-label">Nama</label>
-                            <input type="text" class="form-control " name="nama" value="{{ $donatur1->nama }}" readonly>
-                        
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="text" class="form-control" name="email" value="{{ $donatur1->email }}"
-                                readonly>
-                        
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">No Telp</label>
-                            <input type="text" class="form-control" name="no" value="{{ $donatur1->no }}"
-                                readonly>
-                        
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Jumlah</label>
-                            <input type="text" class="form-control" name="jumlah" value="{{ $donatur1->jumlah }}"
-                                readonly>
-                        
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Jenis Donasi</label>
-                            <input type="text" class="form-control" name="jenis" value="{{ $donatur1->jenis }}"
-                                readonly>
-
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Jenis Pembayaran</label>
-                            <input type="text" class="form-control" name="pembayaran" value="{{ $donatur1->pembayaran }}"
-                                readonly>
-
+                    <div class="table-responsive">
+                            <table class="table align-middle " id="dataTable">
+                            <tr>
+                                <th>Nama</th>
+                                <th>Email</th>
+                                <th>No Telphone</th>
+                                <th>Jenis</th>
+                                <th>Jumlah Donasi</th>
+                                <th>Jenis Pembayaran</th>
+                            </tr>
+                            <tr>
+                                <td>{{$donatur1->nama}}</td>
+                                <td>{{$donatur1->email}}</td>
+                                <td>{{$donatur1->no}}</td>
+                                <td>{{$donatur1->jenis}}</td>
+                                <td>{{$donatur1->jumlah}}</td>
+                                <td>{{$donatur1->pembayaran}}</td>
+                            </tr>
+                            
+                        </table>
                         </div>
                         <div class="mb-3">
                             <div class="d-grid gap-2">

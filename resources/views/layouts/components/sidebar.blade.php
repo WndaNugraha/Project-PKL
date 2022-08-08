@@ -1,9 +1,5 @@
 <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
-      <a href="admin">
-       <!-- <img src="{{asset('assets/images/ruang.png')}}" class="logo-icon" alt="logo icon"> -->
-       <h5 class="logo-text">ZIS Admin</h5>
-     </a>
    </div>
    </div><div class="sidebar">
       <!-- Sidebar user panel (optional) -->
@@ -43,33 +39,33 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./home2" class="nav-link active">
+                <a href="admin/home2" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Home</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="zakat" class="nav-link">
+                <a href="admin/zakat" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Zakat</p>
+                  <p>Crud Zakat</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="infaq" class="nav-link">
+                <a href="admin/infaq" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Infaq</p>
+                  <p>Crud Infaq</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="shodakoh" class="nav-link">
+                <a href="admin/shodakoh" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Shodaqoh</p>
+                  <p>Crud Shodaqoh</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="donatur" class="nav-link">
+                <a href="admin/donatur" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Donasi</p>
+                  <p>Crud Donasi</p>
                 </a>
               </li>
             </ul>

@@ -19,4 +19,5 @@ class UserSeeder extends Seeder
         $admin->email = "admin@gmail.com";
         $admin->password = bcrypt('12345678');
     }
+    
 }

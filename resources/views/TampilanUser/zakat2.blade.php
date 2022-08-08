@@ -34,7 +34,7 @@
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
-             @foreach($zakat1 as $data)
+             @foreach($zakat as $data)
                 <h4>{{$data->judul}}</h4>
                 <p>{{$data->artikel}}</p>
              @endforeach
