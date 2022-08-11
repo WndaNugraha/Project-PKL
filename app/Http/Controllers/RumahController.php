@@ -45,13 +45,11 @@ class RumahController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => 'unique:rumahs',
-            'artikel' => '',
-            'tanggal' => '',
+            'artikel' => 'required',
+            'tanggal' => 'required',
         ]);
 
         $rumah1 = new rumah();
-        $rumah1->judul = $request->judul;
         $rumah1->artikel = $request->artikel;
         $rumah1->tanggal = $request->tanggal;
         $rumah1->save();
@@ -96,13 +94,12 @@ class RumahController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => 'required|:rumahs',
             'artikel' => 'required',
             'tanggal' => 'required',
         ]);
 
         $rumah1 = rumah::findOrFail($id);
-        $rumah1->judul = $request->judul;
+
         $rumah1->artikel = $request->artikel;
         $rumah1->tanggal = $request->tanggal;
         $rumah1->save();

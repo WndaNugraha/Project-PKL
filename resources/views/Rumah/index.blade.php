@@ -19,7 +19,6 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Judul</th>
                                         <th>Artikel</th>
                                         <th>Tanggal</th>
                                         <th>Aksi</th>
@@ -30,8 +29,7 @@
                                     @foreach ($rumah1 as $data)
                                         <tr>
                                             <td>{{ $no++ }}</td>
-                                            <td>{{ $data->judul }}</td>
-                                            <td>{{ $data->artikel }}</td>
+                                            <td>{!! $data->artikel !!}</td>
                                             <td>{{ date('d M Y', strtotime($data->tanggal)) }}</td>
                                             <td>
                                                 <form action="{{ route('rumah.destroy', $data->id) }}" method="post">

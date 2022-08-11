@@ -44,13 +44,11 @@ class InfaqController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => 'unique:infaqs',
             'artikel' => '',
             'tanggal' => '',
         ]);
 
         $infaq1 = new infaq();
-        $infaq1->judul = $request->judul;
         $infaq1->artikel = $request->artikel;
         $infaq1->tanggal = $request->tanggal;
         $infaq1->save();
@@ -95,14 +93,12 @@ class InfaqController extends Controller
     {
         //
     $validated = $request->validate([
-            'judul' => '|unique:infaqs',
             'artikel' => '',
             'tanggal' => '',
         ]);
 
         
         $infaq1 = infaq::findOrFail($id);
-        $infaq1->judul = $request->judul;
         $infaq1->artikel = $request->artikel;
         $infaq1->tanggal = $request->tanggal;
         $infaq1->save();

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\shodakoh;
 use App\Models\zakat;
 use App\Models\infaq;
+use App\Models\rumah;
 
 
 class artikelcontroller extends Controller
@@ -36,6 +37,15 @@ class artikelcontroller extends Controller
             "title" => "infaq"
         ]);
     
+        }
+
+    public function home(){
+        
+        $rumah1 = rumah::all();
+        return view('tampilanuser.home',compact('rumah1'),[
+            "title" => "Home"
+        ]);
+        
         }
 
 }

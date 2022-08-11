@@ -15,8 +15,7 @@ class CreateRumahsTable extends Migration
     {
         Schema::create('rumahs', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->string('artikel');
+            $table->text('artikel');
             $table->date('tanggal');
             $table->timestamps();
         });

@@ -78,8 +78,7 @@
                                <img src="aset/img/zakat.png" alt="" style="width: 200px; height: 200px;" class="rounded-circle">
                             </div>
                             <h5 class="mb-3 ">Penyaluran Zakat</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <p>Zakat yang kami kumpulkan dari donasi, akan kami berikan kepada fakir,miskin,amil dan mualaf</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -88,8 +87,7 @@
                             <img src="aset/img/sedeqah.jpeg" alt="" style="width: 200px; height: 200px;" class="rounded-circle">
                             </div>
                             <h5 class="mb-3">Penyaluran sedekah</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <p>Sedekah yang kami kumpulkan dari donasi, akan kami berikan kepada orang miskin yang membutuhkan bantuan  </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -98,8 +96,7 @@
                             <img src="aset/img/infaq.jpg" alt="" style="width: 200px; height: 200px;" class="rounded-circle">
                             </div>
                             <h5 class="mb-3">Penyaluran Infaq</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <p>Infaq yang kami kumpulkan dari hasil donasi kalian, akan kami donasikan kepada orang-orang miskin. Orang miskin membutuhkan bantuan karena mereka hidup serba kekurangan.</p>
                         </div>
                     </div>
                 </div>
@@ -162,18 +159,13 @@
             </div>
         </div>
         <!-- Testimonial End -->
-        <div class="container wow fadeInUp" data-wow-delay="0.1s">
-
-            <h2>judul..</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At praesentium ullam incidunt reprehenderit 
-                numquam alias amet quo labore? Temporibus dolores debitis cupiditate dolorum quaerat voluptate 
-                quibusdam natus voluptates quod a ratione, dolor eveniet? Perferendis consectetur, excepturi, facere 
-                tempore omnis iusto ut quibusdam optio facilis recusandae sapiente ipsa perspiciatis nam modi. 
-                Quidem a, officiis aperiam facilis pariatur amet, quibusdam labore dicta distinctio officia magni 
-                quae modi excepturi exercitationem ea earum doloremque praesentium iure, tempore reprehenderit laudantium 
-                sed aut sequi. Eum sint autem necessitatibus tempore fugiat dolores totam! Reiciendis, porro aliquid esse 
-                eaque, eligendi ducimus distinctio itaque, maiores veniam molestias illo modi?</p>
-          <br>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+             @foreach($rumah1 as $data)
+                <p class="fs-5">{!!$data->artikel!!}</p>
+             @endforeach
+            </div>
         </div>
+
 
 @endsection

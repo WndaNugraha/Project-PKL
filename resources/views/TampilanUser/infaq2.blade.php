@@ -13,7 +13,7 @@
                                     <li class="breadcrumb-item"><a class="text-white" href="/home2">Home</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/zakat2">zakat</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/infaq2">Infaq</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="/donasi2">Donasi</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="/sedekah2">Sedekah</a></li>
                                 </ol>
                                 <a href="/donasi2" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Donasi</a>
 
@@ -35,12 +35,10 @@
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
              @foreach($infaq as $data)
-                <h4>{{$data->judul}}</h4>
-                <p>{{$data->artikel}}</p>
+                <p class="fs-5">{!!$data->artikel!!}</p>
              @endforeach
             </div>
         </div>
-
 
         
 

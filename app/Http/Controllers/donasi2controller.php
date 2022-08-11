@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\donatur;
+use Illuminate\Support\Facades\Mail;
 
 class donasi2controller extends Controller
 {
@@ -19,6 +20,8 @@ class donasi2controller extends Controller
         return view('tampilanuser.donasi2', compact('donatur1'),[
             "title" => "Donasi"
         ]);
+
+    
     }
 
     /**
@@ -42,6 +45,21 @@ class donasi2controller extends Controller
     public function store(Request $request)
     {
         //
+
+        //siapkan data
+        $email =$request->email;
+        $data = array(
+            'nama' => $request->name,
+            'email' => $request->email
+        );
+
+        //kirim email
+        Mail::send('tampilanuser.feedback',$data, function($mail) use($email){
+            $mail->to($email, 'no-reply')
+                 ->subject("Notifikasi dari Ruang ZIS");
+            $mail->from('ruangzis123@gmail.com','Ruang ZIS');
+        });
+
         $validated = $request->validate([
             'nama' => 'required|min:2',
             'email' => 'required|email:rfc,dns',
@@ -61,6 +79,8 @@ class donasi2controller extends Controller
 
         $donatur1->save();
         return redirect('/donasi2')->with('success','Donasi Anda Berhasil');
+
+        
     }
 
     /**
@@ -75,6 +95,7 @@ class donasi2controller extends Controller
         $donatur1 = donatur::findOrFail($id);
         return view('tampilanuser.donasi2', compact('donatur1'));
     
+        
     }
 
     /**

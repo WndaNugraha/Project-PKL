@@ -182,6 +182,27 @@ h6,
 
 
 /*** Hero Header ***/
+.hero1{
+    background:
+        url(../img/bg-tree.png);
+
+    background-repeat: no-repeat;
+}
+
+.hero2{
+    background:
+    url(../img/bg-round.png);
+
+    background-repeat: no-repeat;
+}
+
+.hero3{
+    background:
+    url(../img/bg-dot.png);
+
+    background-repeat: no-repeat;
+}
+
 .hero-header {
     background:
         url(../img/bg-dot.png),

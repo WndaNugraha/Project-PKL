@@ -39,34 +39,35 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="admin/home2" class="nav-link active">
+                <a href="../../admin/rumah" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Home</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="admin/zakat" class="nav-link">
+                <a href="../../admin/zakat" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Crud Zakat</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="admin/infaq" class="nav-link">
+                <a href="../../admin/infaq" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Crud Infaq</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="admin/shodakoh" class="nav-link">
+                <a href="../../admin/shodakoh" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Crud Shodaqoh</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="admin/donatur" class="nav-link">
+                <a href="../../admin/donatur" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Crud Donasi</p>
                 </a>
               </li>
             </ul>
           </li>
+

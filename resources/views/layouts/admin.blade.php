@@ -25,6 +25,15 @@
   <link rel="stylesheet" href="{{asset('assets/plugins/daterangepicker/daterangepicker.css')}}">
   <!-- summernote -->
   <link rel="stylesheet" href="{{asset('assets/plugins/summernote/summernote-bs4.min.css')}}">
+  <!-- Trix Editor -->
+  <link rel="stylesheet" type="text/css" href="{{asset('assets/dist/css/trix.css')}}">
+  
+<style>
+  trix-toolbar [data-trix-button-group='file-tools']{
+    display: none;
+  }
+</style>
+  
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -129,5 +138,7 @@
 <script src="{{asset('assets/dist/js/demo.js')}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{asset('assets/dist/js/pages/dashboard.js')}}"></script>
+<!-- Trix Editor -->
+<script type="text/javascript" src="{{asset('assets/dist/js/trix.js')}}"></script>
 </body>
 </html>

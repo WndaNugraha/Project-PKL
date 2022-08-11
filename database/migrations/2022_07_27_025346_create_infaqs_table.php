@@ -15,8 +15,7 @@ class CreateInfaqsTable extends Migration
     {
         Schema::create('infaqs', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->string('artikel');
+            $table->text('artikel');
             $table->date('tanggal');
             $table->timestamps();
         });

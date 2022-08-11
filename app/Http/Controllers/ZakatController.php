@@ -52,13 +52,11 @@ class ZakatController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => '|unique:zakats',
             'artikel' => '',
             'tanggal' => '',
         ]);
 
         $zakat1 = new zakat();
-        $zakat1->judul = $request->judul;
         $zakat1->artikel = $request->artikel;
         $zakat1->tanggal = $request->tanggal;
         $zakat1->save();
@@ -103,13 +101,11 @@ class ZakatController extends Controller
     {
         //
         $validated = $request->validate([
-            'judul' => '|:zakats',
             'artikel' => '',
             'tanggal' => '',
         ]);
 
         $zakat1 = zakat::findOrFail($id);
-        $zakat1->judul = $request->judul;
         $zakat1->artikel = $request->artikel;
         $zakat1->tanggal = $request->tanggal;
         $zakat1->save();

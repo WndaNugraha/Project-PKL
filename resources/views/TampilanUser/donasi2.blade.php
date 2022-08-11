@@ -13,7 +13,7 @@
                                     <li class="breadcrumb-item"><a class="text-white" href="/home2">Home</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/zakat2">zakat</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/infaq2">Infaq</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="/donasi2">Donasi</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="/sedekah2">Sedekah</a></li>
                                 </ol>
                             <a href="#donasi2" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Donasi</a>
                             </nav>
@@ -22,6 +22,50 @@
                 </div>
             </div>
         </div>
+
+   
+
+        <!-- <div class="container">
+        <div class="row animated zoomIn">
+            <div class="col-lg-3 col-6">
+                <div class="card bg-primary hero1">
+                    <div class="card-body">
+                        <h4 class="text-white">Total Donasi</h4>
+                        <p class="text-white">$total</p>
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card bg-primary hero2">
+                    <div class="card-body">
+                        <h4 class="text-white">Donasi Zakat</h4>
+                        <p class="text-white">Rp.100.0000</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card bg-primary hero3">
+                    <div class="card-body">
+                        <h4 class="text-white">Total Donasi</h4>
+                        <p class="text-white">Rp.100.0000</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card bg-primary hero1">
+                    <div class="card-body">
+                        <h4 class="text-white">Total Donasi</h4>
+                        <p class="text-white">Rp.100.0000</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
         
         
         <section id="donasi2">
@@ -84,7 +128,7 @@
                                     <div class="col-md-12">
                                         <div class="form-floating">
                                             <select name="jenis" id="" class="form-select @error('jenis') is-invalid @enderror" required>
-                                                <option value="">Jenis Donasi</option>
+                                                <option value=""></option>
                                                 <option value="Zakat">Zakat</option>
                                                 <option value="Infaq">Infaq</option>
                                                 <option value="Sedekah">Sedekah</option>

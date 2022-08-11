@@ -13,7 +13,7 @@
                                     <li class="breadcrumb-item"><a class="text-white" href="/home2">Home</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/zakat2">zakat</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="/infaq2">Infaq</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="/donasi2">Donasi</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="/sedekah2">Sedekah</a></li>
                                 </ol>
                                 <a href="/donasi2" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Donasi</a>
                             </nav>
@@ -75,13 +75,12 @@
         </div>
         About End -->
 
-        <div class="container">
-        @foreach($sedekah as $data)
-            <h3>{{$data->judul}}</h3>
-            <p>{{$data->artikel}}</p>
-            <small class="text-muted">{{$data->tanggal}}</small>
-            <br>
-        @endforeach
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+             @foreach($sedekah as $data)
+                <p class="fs-5">{!!$data->artikel!!}</p>
+             @endforeach
+            </div>
         </div>
 
 

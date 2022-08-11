@@ -14,18 +14,9 @@
                             @csrf
                             @method('put')
                             <div class="mb-3">
-                                <label class="form-label">Judul</label>
-                                <input type="text" class="form-control  @error('judul') is-invalid @enderror"
-                                    name="judul" value="{{ $zakat1->judul }}">
-                                @error('judul')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Artikel</label>
-                                <textarea class="form-control  @error('artikel') is-invalid @enderror" name="artikel">{{ $zakat1->artikel}}</textarea>
+                            <label for="">Artikel</label>
+                            <input id="artikel" type="hidden" name="artikel" class="form-control  @error('artikel') is-invalid @enderror" value="{!! $zakat1->artikel !!}">
+                                <trix-editor input="artikel"></trix-editor>
                                 @error('artikel')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

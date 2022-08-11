@@ -28,17 +28,13 @@ Route::get('/admin', function(){
     return view('layouts.admin');
 });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home2',function(){
 
-    return view('TampilanUser.home',[
-        "title" => "Home"
-    ]);
-});
 
 Route::resource('home1', RumahController::class);
 route::get('/sedekah2',[artikelcontroller::class,'sedekah']);
 route::get('/zakat2',[artikelcontroller::class,'zakat']);
 route::get('/infaq2',[artikelcontroller::class,'infaq']);
+route::get('/home2',[artikelcontroller::class,'home']);
 route::resource('/donasi2',donasi2controller ::class);
 
 
